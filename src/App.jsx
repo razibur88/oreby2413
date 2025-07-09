@@ -1,8 +1,9 @@
+import Home from "./pages/Home"
 
 function App() {
   return (
     <>
-     <h2 className="font-dmsans">hello</h2>
+    <Home/>
     </>
   )
 }
