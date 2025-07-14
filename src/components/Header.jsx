@@ -9,7 +9,7 @@ const Header = () => {
   let [show, setShow] = useState(false)
   return (
     <>
-      <header className={`lg:py-2 ${show ? "mb-0" : "mb-8"}`}>
+      <header className={`lg:py-2 ${show ? "mb-0" : "mb-8 lg:mb-0"}`}>
         <Container>
           <Flex className="items-center">
             <div className="w-1/3">
@@ -20,7 +20,7 @@ const Header = () => {
             <div className="w-full lg:w-2/3">
               <ul
                 className={`lg:flex justify-end gap-x-6 mt-2 duration-300 ease-in-out ${
-                  show == true ? "bg-green-500 mt-0 w-full" : "mt-[-160px]"
+                  show == true ? "bg-green-500 mt-0 w-full" : "mt-[-160px] lg:mt-0"
                 }`}
               >
                 <li>
