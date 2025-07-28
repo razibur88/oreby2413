@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import Container from "./Container";
 import Flex from "./Flex";
@@ -13,8 +14,8 @@ const Header = () => {
         <Container>
           <Flex className="items-center">
             <div className="w-1/3">
-              <div className="">
-                <img src={Logo} alt="" />
+              <div className="pt-2 lg:pt-0">
+                  <img src={Logo} alt="" />
               </div>
             </div>
             <div className="w-full lg:w-2/3">
@@ -24,44 +25,44 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <a
+                  <Link
                     className="font-dm text-[14px] text-[#767676] font-normal hover:text-[#262626] duration-300 ease-in-out text-capitalize"
-                    href="#"
+                    to="/"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="font-dm text-[14px] text-[#767676] font-normal"
-                    href="#"
+                    to="/about"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="font-dm text-[14px] text-[#767676] font-normal"
-                    href="#"
+                    to="/product"
                   >
                     Shop
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="font-dm text-[14px] text-[#767676] font-normal"
                     href="#"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="font-dm text-[14px] text-[#767676] font-normal"
                     href="#"
                   >
                     Journal
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

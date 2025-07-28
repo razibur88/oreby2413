@@ -51,7 +51,7 @@ useEffect(() => {
               </h3>
             </div>
             {cateShow && (
-              <div className="lg:bg-[#262626] bg-[red] py-3 absolute left-0 top-[43px] w-full">
+              <div className="lg:bg-[#262626] bg-[red] py-3 absolute left-0 top-[43px] w-full z-[10]">
                 <ul>
                   <li className="py-2 relative text-[rgba(255,255,255,0.7)] pl-[20px] hover:text-[#fff] hover:pl-[30px] duration-300 ease-in-out font-dm text-[16px] border-b-[1px] border-[rgba(255,255,255,0.7)]">
                     <div className="flex justify-between">
@@ -84,7 +84,7 @@ useEffect(() => {
                 placeholder="Search..."
                 className="w-full bg-white py-3 pl-4 rounded-full"
               />
-              <div className="absolute right-6 top-[50%] translate-y-[-50%]">
+              <div className="absolute right-6 top-[50%] translate-y-[-50%] z-[10]">
                 <FaSearch />
               </div>
             </div>
@@ -100,7 +100,7 @@ useEffect(() => {
               </div>
             </div>
             {accShow && (
-              <div className="w-[200px] absolute left-[30%] top-[41px]">
+              <div className="w-[200px] absolute left-[30%] top-[41px] z-[10]">
                 <ul>
                   <li className="py-3 px-4 bg-[#262626] text-white font-dm text-[16px] text-center hover:text-[#222] hover:bg-[#fff] duration-300 ease-in-out">
                     My Account
@@ -112,7 +112,7 @@ useEffect(() => {
               </div>
             )}
             {cartshow && (
-              <div className="absolute left-0 top-[40px] w-full">
+              <div className="absolute left-0 top-[40px] w-full z-[10] bg-[#fff]">
                 <div className="flex items-center justify-around bg-[#F5F5F3]">
                   <div className="">
                     <img src={CartImage} alt="" />
